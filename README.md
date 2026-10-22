@@ -1,6 +1,7 @@
 # URL-shortener
 URL shortener - project to learn new tech stack. FastAPI, SQLAlchemy +SQLite
 
+```bash
 url-shortener/
 ├── app/
 │   ├── __init__.py
@@ -12,3 +13,4 @@ url-shortener/
 ├── tests/
 │   └── test_main.py
 └── requirements.txt
+```
