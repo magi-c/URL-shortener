@@ -14,3 +14,25 @@ url-shortener/
 │   └── test_main.py
 └── requirements.txt
 ```
+
+1. Create the virtual environment (only once)
+```bash python -m venv .venv```
+
+2. Allow activation scripts (only once per Windows user, if activation is blocked)
+```bash Set-ExecutionPolicy -Scope CurrentUser RemoteSigned```
+
+3. Activate it
+```bash .\.venv\Scripts\Activate.ps1```
+
+4. Install dependencies
+
+```bash
+    python -m pip install --upgrade pip
+    pip install -r requirements.txt 
+```
+
+5. Run the tests
+```bash python -m pytest -v```
+
+6. Start the server, then open http://localhost:8000/docs
+```bash uvicorn app.main:app --reload```
